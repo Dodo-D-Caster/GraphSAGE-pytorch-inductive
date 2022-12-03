@@ -2,7 +2,7 @@
 
 ## 动机 Motivation
 
-论文Inductive Representation Learning on Large Graphs的tensorflow版本实现是inductive的，但在graphsage-pytorch中(https://github.com/twjiang/graphSAGE-pytorch)确实transductive的。
+论文Inductive Representation Learning on Large Graphs的tensorflow版本实现是inductive的，但在graphsage-pytorch中(https://github.com/twjiang/graphSAGE-pytorch) 却是transductive的。
 
 The tensorflow version of implementation of graphsage is inductive, however the pytorch version (https://github.com/twjiang/graphSAGE-pytorch) is transductive.
 
