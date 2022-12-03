@@ -65,7 +65,7 @@ class DataCenter(object):
                         adj_lists[node_map[pair[1]]].add(node_map[pair[0]])
                     
                     # 对于训练集，neighbor只能包含训练集中的节点
-                    if node_map[pair[1]] in train_index and node_map[pair[1]] in train_index: 
+                    if node_map[pair[0]] in train_index and node_map[pair[1]] in train_index: 
                         adj_lists[node_map[pair[0]]].add(node_map[pair[1]])
                         adj_lists[node_map[pair[1]]].add(node_map[pair[0]])
             
