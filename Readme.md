@@ -81,14 +81,19 @@ while i < len(train_index):
     i += 1
 ```
 
-## 代码介绍
+## 代码介绍 File description
 
 myGraphSAGE_inductive_delete.py : 采用删除孤立节点的方式的graphsage的inductive版本
+
 myGraphSAGE_inductive_selfloop.py : 采用增加自循环的方式的graphsage的inductive版本
+
 myGraphSAGE_transductive.py : 原始的graphsage的transductive版本
 
+
 myGraphSAGE_inductive_delete.py : The inductive version of graphsage by deleting isolated nodes
+
 myGraphSAGE_inductive_selfloop.py : The inductive version of graphsage by adding self-loop
+
 myGraphSAGE_transductive.py : the raw transductive version of graphsage
 
 运行方式： How to run:
