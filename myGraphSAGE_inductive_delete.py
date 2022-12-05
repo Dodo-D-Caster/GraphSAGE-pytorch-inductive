@@ -238,7 +238,7 @@ class Classification(nn.Module):
         input_size: 输入维度
         num_classes: 类别数量
     return:
-        logists: 最大概率对应的标签
+        logists: 返回所有类别(标签)的值, 最大的值即预测的类别
     """
     def __init__(self, input_size, num_classes):
         super(Classification, self).__init__()
