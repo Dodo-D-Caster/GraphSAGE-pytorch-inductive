@@ -98,5 +98,6 @@ myGraphSAGE_transductive.py : the raw transductive version of graphsage
 
 运行方式： How to run:
 ```
+mkdir outputFiles
 python3 + xxx.py
 ```
