@@ -112,7 +112,7 @@ xxx_sampleCloseCentrality.py : sample using closeness centrality (top 10
 xxx_sampleDegreeCentrality.py : sample using degree centrality (top5 && bottom5
 
 
-part of the result:
+# Results:
 
 10 epoches with Mean aggregator
 
