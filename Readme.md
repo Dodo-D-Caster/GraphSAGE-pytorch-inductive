@@ -96,6 +96,52 @@ myGraphSAGE_inductive_selfloop.py : The inductive version of graphsage by adding
 
 myGraphSAGE_transductive.py : the raw transductive version of graphsage
 
+
+xxx_sampleCloseCentrality.py : 采用紧密中心性采样 (取最大的5个和最小的5个
+
+xxx_sampleDegreeCentrality.py : 采用度中心性采样 (取最大的10个
+
+
+xxx_sampleCloseCentrality.py : sample using closeness centrality (top 10
+
+xxx_sampleDegreeCentrality.py : sample using degree centrality (top5 && bottom5
+
+
+part of the result:
+
+10 epoches with Mean aggregator
+
+# sample - random
+
+|  | supervised | unsupervised | sup+unsup |
+| --- | --- | --- | --- |
+| inductive_delete | 0.835920 | 0.545455 | 0.761641 |
+| inductive_selfloop | 0.853659 | 0.579823 | 0.808204 |
+| transductive | 0.851441 | 0.701774 | 0.853659 |
+
+## sample - degreeCentrality
+
+取度最大的5个和最小的5个邻居
+
+|  | supervised | unsupervised | sup+unsup |
+| --- | --- | --- | --- |
+| inductive_delete | 0.843681 | 0.558758 | 0.819290 |
+| inductive_selfloop | 0.859202 | 0.576497 | 0.812639 |
+| transductive | 0.868071 | 0.729490 | 0.853659 |
+
+## sample - closenessCentrality
+
+取中心性最大的10个节点 
+
+$中心性 = 1 \div \frac{\sum 邻居的度}{邻居数量} = \frac{邻居数量}{\sum 邻居的度}$
+
+|  | supervised | unsupervised | sup+unsup |
+| --- | --- | --- | --- |
+| inductive_delete | 0.848115 | 0.705100 | 0.783814 |
+| inductive_selfloop | 0.873614 | 0.686253 | 0.786031 |
+| transductive | 0.862528 | 0.742794 | 0.862528 |
+
+
 运行方式： How to run:
 ```
 mkdir outputFiles
