@@ -83,6 +83,8 @@ while i < len(train_index):
 
 ## 代码介绍 File description
 
+### transductive -> inductive
+
 myGraphSAGE_inductive_delete.py : 采用删除孤立节点的方式的graphsage的inductive版本
 
 myGraphSAGE_inductive_selfloop.py : 采用增加自循环的方式的graphsage的inductive版本
@@ -95,6 +97,9 @@ myGraphSAGE_inductive_delete.py : The inductive version of graphsage by deleting
 myGraphSAGE_inductive_selfloop.py : The inductive version of graphsage by adding self-loop
 
 myGraphSAGE_transductive.py : the raw transductive version of graphsage
+
+
+### random sample -> centrality sample
 
 
 xxx_sampleCloseCentrality.py : 采用紧密中心性采样 (取最大的5个和最小的5个
@@ -142,7 +147,7 @@ $中心性 = 1 \div \frac{\sum 邻居的度}{邻居数量} = \frac{邻居数量}
 | transductive | 0.862528 | 0.742794 | 0.862528 |
 
 
-运行方式： How to run:
+# 运行方式： How to run:
 ```
 mkdir outputFiles
 python3 + xxx.py
