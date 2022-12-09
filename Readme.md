@@ -73,12 +73,12 @@ Then delete the adj_list and train_index of isolated nodes
 ```python
 i = 0
 while i < len(train_index):
-		if i<len(train_index) and len(adj_lists[train_index[i]]) == 0:
-		    # print('--------------deleted--------------', i)
-		    del adj_lists[train_index[i]]
-		    train_index = np.delete(train_index, i)
-		    i -= 1
-    i += 1
+	if i<len(train_index) and len(adj_lists[train_index[i]]) == 0:
+		# print('--------------deleted--------------', i)
+		del adj_lists[train_index[i]]
+		train_index = np.delete(train_index, i)
+		i -= 1
+	i += 1
 ```
 
 ## 代码介绍 File description
